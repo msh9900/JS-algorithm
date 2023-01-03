@@ -1,3 +1,4 @@
+//A를 #으로
 function solution(s) {
   let answer = "";
   for (let x of s) {
