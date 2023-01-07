@@ -4,7 +4,7 @@ function solution(m, product) {
   let n = product.length;
   product.sort((a, b) => a[0] + a[1] - (b[0] + b[1]));
   for (let i = 0; i < n; i++) {
-    let money = m - (product[i][0] / 2 + product[i][1]);
+    let money = m - (product[i][0] / 2 + product[i][1]); //상품하나를 50퍼센트 할인 한거
     let cnt = 1;
     for (let j = 0; j < n; j++) {
       if (j !== i && product[j][0] + product[j][1] > money) break;
